@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Description -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Number-multiplication-program" />
+    <meta name="keywords" content="immaculata, ics2o" />
+    <meta name="author" content="KestrelBryce" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- favicon -->
+    <link rel="NUMBERS-FAVICON" sizes="180x180" href="./fav_index/NUMBERS-FAVICON.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/NUMBERS-FAVICON.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/NUMBERS-FAVICON.png" />
+
+    <!-- Misc style -->
+    <link rel="manifest" href="./fav_index/site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+    <!-- page title -->
+    <title>Number multiplication</title>
+  </head>
+  
+
+  <body>
+    <!-- misc MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Number multiplication</span>
+        </div>
+      </header>
+    </div>
+    
+      <!-- page break -->
+      <br></br>
+
+      <!-- page break -->
+      <br></br>
+    
+      <!-- Subtitle -->
+      <center>
+        <h4>Enter two numbers so the program can multiply them together</h4>
+      </center>
+
+      <!-- page break -->
+      <br></br>
+      
+      <!-- image -->
+      <center>
+        <img src="./fav_index/NUMBERS-PICTURE.jpg"
+        width= "900px"
+        height= "auto">
+      </center>
+
+      <!-- page break -->
+      <br></br>
+
+      <center><p>Please insert your first number below:</p></center>
+    
+      <!-- min textbox -->
+      <center>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input
+            class="mdl-textfield__input"
+            type="number"
+            step="1"
+            id="int-1-Here"
+            placeholder="Numbers go here..."
+          />          
+          <label class="mdl-textfield__label" for="int-1-Here">Numbers go here...</label>
+          <span class="mdl-textfield__error">Please insert a number with no decimals</span>
+        </div>
+
+        <center><p>Please insert your second number below:</p></center>
+        
+      <!-- max textbox -->
+        <div class="mdl-textfield mdl-js-textfield">
+          <input
+            class="mdl-textfield__input"
+            type="number"
+            step="1"
+            id="int-2-Here"
+          />
+          <label class="mdl-textfield__label" for="int-2-Here">Numbers go here...</label>
+          <span class="mdl-textfield__error">Please insert a number with no decimals</span>
+        </div>
+
+      <!-- page break -->
+      <br></br>
+        
+      <!-- Button -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="javascript:displayGreeting ()">
+          <p>Check results</p>
+        </button>
+        <br />
+        <p>
+          
+          <div id="greeting">
+
+          </div> 
+
+      </center>
+    
+      <!-- page break -->    
+      <br></br>
+    
+      <!-- page break -->
+      <br></br>
+    
+      <!-- page break -->
+      <br></br>
+    
+  </body>
+</html>
