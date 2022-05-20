@@ -1,4 +1,4 @@
-  /* This function gets the user's two inserted numbers and multiplies them together. 
+  /* This function gets the user's two numbers and multiplies them togrther. 
 */
 
 function displayGreeting () {
@@ -8,15 +8,31 @@ function displayGreeting () {
     
   let int2 = parseInt((document.getElementById("int-2-Here").value));
 
-    // initializing variable(s)
-  let sum = 0
+
+    // initializing counter
+  //let counter = 1
+
+
+    // initializing values
+  let numbers = ""
+
+  let sum = ""
   
     // loop code
-  for  (let counter = 1;  counter <= int1;  counter++)  {
-    
-    sum = sum + int2
+  for  (let counter = 0;  counter <= int1;  counter++)  {
+    // building string of numbers with line break
+    if  (counter < int1) {
+      numbers = int2 + counter + " + "
+      //sum = sum + int2 + "<br>"
+    }
+    else  {
+      numbers = numbers + counter
+    }
+    // add to the counter
+    sum = sum + counter
   }
 
   // return string
-  document.getElementById("greeting").innerHTML = int1 + " * " + int2 + " = " + sum
+  document.getElementById("greeting").innerHTML = numbers + 
+    
 }
