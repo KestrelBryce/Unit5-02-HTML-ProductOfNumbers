@@ -4,35 +4,41 @@
 function displayGreeting () {
 
     // user input
-  let int1 = parseInt((document.getElementById("int-1-Here").value));
+  let int1 = parseInt(document.getElementById("int-1-Here").value);
     
-  let int2 = parseInt((document.getElementById("int-2-Here").value));
+  let int2 = parseInt(document.getElementById("int-2-Here").value);
 
-
-    // initializing counter
-  //let counter = 1
-
-
-    // initializing values
-  let numbers = ""
-
-  let sum = ""
+    // initializing sum
+  let sum = 0
   
-    // loop code
-  for  (let counter = 0;  counter <= int1;  counter++)  {
-    // building string of numbers with line break
-    if  (counter < int1) {
-      numbers = int2 + counter + " + "
-      //sum = sum + int2 + "<br>"
+    // loop code, works for ++, and +-
+   if  (int1 > 0)  { 
+      for  (let counter = 1;  counter <= int1; counter++)  {
+        sum = sum + int2
+      }
+        
     }
-    else  {
-      numbers = numbers + counter
+
+    // loop code, works for --, and -+
+    else if  (int1 < 0)  {
+      for  (let counter = -1;  counter >= int1; counter--)  {
+        sum = sum + int2
+      }  
+      
     }
-    // add to the counter
-    sum = sum + counter
+  
+
+    // return string negative
+  if  ((int1 < 0)  &&  (int2 < 0)) {
+    document.getElementById("greeting").innerHTML = int1 + " x " + int2 + " = " + sum
   }
 
-  // return string
-  document.getElementById("greeting").innerHTML = numbers + 
+  else if  (int1 < 0)  {
+    document.getElementById("greeting").innerHTML = int1 + " x " + int2 + " = -" + sum
+  }
+    // return string positive
+  else  {
+    document.getElementById("greeting").innerHTML = int1 + " x " + int2 + " = " + sum
+  }
     
 }
