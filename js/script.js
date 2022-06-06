@@ -1,4 +1,4 @@
-  /* This function gets the user's two numbers and multiplies them togrther. 
+  /* This function gets the user's int1 and int2 numbers and displays the product. 
 */
 
 function displayGreeting () {
