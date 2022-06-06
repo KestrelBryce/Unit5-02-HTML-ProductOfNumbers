@@ -27,10 +27,10 @@ function displayGreeting () {
       
     }
   
-
+    // return string code
     // return string negative
   if  ((int1 < 0)  &&  (int2 < 0)) {
-    document.getElementById("greeting").innerHTML = int1 + " x " + int2 + " = " + sum
+    document.getElementById("greeting").innerHTML = int1 + " x " + int2 + " = " + sum * -1
   }
 
   else if  (int1 < 0)  {
